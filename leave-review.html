@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Review</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function submitReview() {
+            alert("Thank you for your review!");
+            // هنا يمكنك إضافة كود لإرسال التقييم إلى قاعدة بيانات أو تخزينه في مكان آخر
+        }
+    </script>
+</head>
+<body>
+    <section id="leave-review">
+        <h2>Leave a Review</h2>
+        <textarea placeholder="Write your review here..." rows="5"></textarea>
+        <div class="rating">
+            <span class="fa fa-star" onclick="this.classList.toggle('checked')"></span>
+            <span class="fa fa-star" onclick="this.classList.toggle('checked')"></span>
+            <span class="fa fa-star" onclick="this.classList.toggle('checked')"></span>
+            <span class="fa fa-star" onclick="this.classList.toggle('checked')"></span>
+            <span class="fa fa-star" onclick="this.classList.toggle('checked')"></span>
+        </div>
+        <button onclick="submitReview()">Submit</button>
+    </section>
+</body>
+</html>
